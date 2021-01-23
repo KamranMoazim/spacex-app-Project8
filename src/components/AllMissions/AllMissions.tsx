@@ -4,15 +4,15 @@ import EachMissionCard from './EachMissionCard'
 import { AllMissionsInfoQueryVariables} from '../../generated/graphql'
 
 
-// interface Props {
-//     data: AllMissionsInfoQuery;    //AllMissionsInfoQuery
-//     error: Error,
-//     loading: any
-//   }
+interface Props {
+    data: AllMissionsInfoQueryVariables;    //AllMissionsInfoQuery
+    error: Error,
+    loading: any
+  }
 
 function AllMissions() {
 
-    const { data, error, loading }: React.FC<AllMissionsInfoQueryVariables> = useAllMissionsInfoQuery();
+    const { data, error, loading }: React.FC<Props> = useAllMissionsInfoQuery();
     // const { data, error, loading }: <AllMissionsInfoQuery, Exact<{ [key: string]: never; }>> = useAllMissionsInfoQuery(); 
 
     if(loading){
