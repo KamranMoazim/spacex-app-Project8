@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import './App.css';
-import AllMissions from './components/AllMissions/AllMissions'
+import AllMissions from './components/AllMissions/AllMissions.txs'
 
 function App() {
 

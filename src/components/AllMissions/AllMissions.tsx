@@ -12,8 +12,8 @@ import EachMissionCard from './EachMissionCard'
 
 function AllMissions() {
 
-    const { data, error, loading } = useAllMissionsInfoQuery();
-    // const { data, error, loading }: AllMissionsInfoQueryHookResult = useAllMissionsInfoQuery();
+    // const { data, error, loading } = useAllMissionsInfoQuery();
+    const { data, error, loading }: AllMissionsInfoQueryHookResult = useAllMissionsInfoQuery();
 
 
     // const { data, error, loading }: React.FC<AllMissionsInfoQuery, <{ [key: string]: never; }>,> = useAllMissionsInfoQuery();
