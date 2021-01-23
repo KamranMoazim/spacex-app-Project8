@@ -5,7 +5,7 @@ import Grid from '@material-ui/core/Grid';
 import SingleMissionDetails from '../SingleMissionDetails/SingleMissionDetails'
 
 interface Props {
-    data: AllMissionsInfoQuery | undefined;
+    data: AllMissionsInfoQuery;
   }
 
 
