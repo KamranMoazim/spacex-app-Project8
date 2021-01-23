@@ -10,17 +10,17 @@ interface Props {
 
 function AllMissions() {
 
-    const { data }: React.FC<Props> = useAllMissionsInfoQuery();   //  error, loading
+    const { data, error, loading }: React.FC<Props> = useAllMissionsInfoQuery();   //  error, loading
 
     // var data1:AllMissionsInfoQuery = data
 
-    // if(loading){
-    //     return <h1>Loading</h1>
-    // }
+    if(loading){
+        return <h1>Loading</h1>
+    }
 
-    // if(error){
-    //     return <h1>Error</h1>
-    // }
+    if(error){
+        return <h1>Error</h1>
+    }
 
     
     return (
