@@ -1,7 +1,7 @@
 import React from 'react'
 import {useAllMissionsInfoQuery} from '../../generated/graphql'
 import EachMissionCard from './EachMissionCard'
-import { AllMissionsInfoQueryHookResult} from '../../generated/graphql'
+// import { AllMissionsInfoQueryHookResult} from '../../generated/graphql'
 
 
 // interface Props {
@@ -12,9 +12,10 @@ import { AllMissionsInfoQueryHookResult} from '../../generated/graphql'
 
 function AllMissions() {
 
-    const { data, error, loading }: AllMissionsInfoQueryHookResult = useAllMissionsInfoQuery();
+    const { data, error, loading } = useAllMissionsInfoQuery();
+    // const { data, error, loading }: AllMissionsInfoQueryHookResult = useAllMissionsInfoQuery();
 
-    
+
     // const { data, error, loading }: React.FC<AllMissionsInfoQuery, <{ [key: string]: never; }>,> = useAllMissionsInfoQuery();
     // const { data, error, loading }: <AllMissionsInfoQuery, Exact<{ [key: string]: never; }>> = useAllMissionsInfoQuery(); 
 
