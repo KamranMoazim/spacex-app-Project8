@@ -12,7 +12,7 @@ import { AllMissionsInfoQueryHookResult} from '../../generated/graphql'
 
 function AllMissions() {
 
-    const { data, error, loading }: React.FC<AllMissionsInfoQueryHookResult> = useAllMissionsInfoQuery();
+    const { data, error, loading }: AllMissionsInfoQueryHookResult = useAllMissionsInfoQuery();
     // const { data, error, loading }: React.FC<AllMissionsInfoQuery, <{ [key: string]: never; }>,> = useAllMissionsInfoQuery();
     // const { data, error, loading }: <AllMissionsInfoQuery, Exact<{ [key: string]: never; }>> = useAllMissionsInfoQuery(); 
 
