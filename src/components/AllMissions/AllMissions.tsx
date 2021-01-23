@@ -1,19 +1,26 @@
 import React from 'react'
 import {useAllMissionsInfoQuery} from '../../generated/graphql'
 import EachMissionCard from './EachMissionCard'
+import {AllMissionsInfoQuery} from '../../generated/graphql'
 
+
+interface Props {
+    data: AllMissionsInfoQuery;
+  }
 
 function AllMissions() {
 
-    const { data, error, loading } = useAllMissionsInfoQuery();
+    const { data }: React.FC<Props> = useAllMissionsInfoQuery();   //  error, loading
 
-    if(loading){
-        return <h1>Loading</h1>
-    }
+    // var data1:AllMissionsInfoQuery = data
 
-    if(error){
-        return <h1>Error</h1>
-    }
+    // if(loading){
+    //     return <h1>Loading</h1>
+    // }
+
+    // if(error){
+    //     return <h1>Error</h1>
+    // }
 
     
     return (
